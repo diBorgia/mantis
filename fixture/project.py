@@ -22,8 +22,10 @@ class ProjectHelper:
             wd = self.app.wd
             self.redirect_to_manage_pr()
             self.project_cache=[]
-            for element in wd.find_elements_by_xpath("//table[@class='width100']/tr//td[@width]"):
-                cells = element.find_elements_by_tag_name("td")
+            for element in wd.find_elements_by_partial_link_text("name"):
+            #for element in wd.find_elements_by_partial_link_text("manage_proj_edit_page.php?project_id="):
+            #for element in wd.find_elements_by_xpath("//table[@class='width100']/tr//td[@width]"):
+                cells = element.find_elements_by_tag_name("tr")
                 name = cells[1].text
                 #получаем текст элемента
                 id = element.find_element_by_name("selected[]").get_attribute("value")
@@ -70,7 +72,8 @@ class ProjectHelper:
         self.redirect_to_manage_pr()
         #find all elements with name selected
         #взять длину получившегося списка and return it
-        return len(wd.find_elements_by_xpath("//table[@class='width100']/tr//td[@width]"))
+        return len(wd.find_elements_by_partial_link_text("name"))
+        #return len(wd.find_elements_by_xpath("//table[@class='width100']/tr//td[@width]"))
 
     def delete_first_proj(self,index):
         wd = self.app.wd

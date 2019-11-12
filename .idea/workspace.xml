@@ -20,7 +20,7 @@
   </component>
   <component name="ProjectId" id="1TUw0HY5QoTagTomyaDT9TyGsvp" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/test_del_project.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/test_add_project.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -35,7 +35,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_del_project.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_project.py">
     <configuration name="test_add_project" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mantis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,6 +82,9 @@
       <module name="mantis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -96,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test" type="tests" factoryName="py.test" nameIsGenerated="true">
+    <configuration name="pytest in test_add_project.py" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="mantis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,7 +110,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_project.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -146,13 +149,13 @@
       <item itemvalue="Python.test_add_project" />
       <item itemvalue="Python.test_del_project" />
       <item itemvalue="Python tests.pytest in test_login.py" />
-      <item itemvalue="Python tests.pytest in test" />
+      <item itemvalue="Python tests.pytest in test_add_project.py" />
       <item itemvalue="Python tests.pytest in test_del_project.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_del_project" />
         <item itemvalue="Python.test_add_project" />
+        <item itemvalue="Python.test_del_project" />
         <item itemvalue="Python.test_login" />
       </list>
     </recent_temporary>
