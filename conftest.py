@@ -2,9 +2,6 @@ import pytest
 import json
 import os.path
 from fixture.application import Application
-from fixture.db import DBfixture
-import importlib
-import jsonpickle
 
 #grobal variable
 fixture = None
@@ -22,7 +19,6 @@ def app(request):
     #тогда надо фикстуру проинициализировать
         fixture = Application(browser=browser, url=web_config['baseUrl'])
     #проверка нужно выполнять логин или не нужно
-    fixture.session.ensure_login(username=web_config["username"], password=web_config["password"])
     return fixture
 
 #ф-цияб занимающ загрузкой из target.json

@@ -20,7 +20,7 @@ class SessionHelper:
         wd.find_element_by_link_text("Logout").click()
         #ждем полного разлогина, чтобы верно отработали последующие сценарии
         #проверяем, что логин произошел по нахождению элемента на странице
-        wd.find_element_by_name("user")
+        wd.find_element_by_name("username")
 
     def ensure_logout(self):
         wd = self.app.wd
@@ -39,8 +39,8 @@ class SessionHelper:
 
     def get_logged_user(self):
         wd = self.app.wd
-        #читаем текс и делаем вырезку от 1 до предпосл символа
-        return wd.find_element_css_selector("td.login-info-left span").text
+        #читаем текст
+        return wd.find_element_by_css_selector("td.login-info-left span").text
 
     def ensure_login(self,username,password):
         wd = self.app.wd

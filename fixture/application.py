@@ -1,5 +1,6 @@
 from selenium import webdriver
 from fixture.session import SessionHelper
+from fixture.project import ProjectHelper
 
 class Application:
 
@@ -17,10 +18,8 @@ class Application:
         self.wd.implicitly_wait(1)
         #подключение драйвера через фикстуру
         self.session = SessionHelper(self)
-        self.group = GroupHelper(self)
-        self.contact = ContactHelper(self)
+        self.project = ProjectHelper(self)
         self.url = url
-
 
     def open_home_page(self):
         wd = self.wd
@@ -28,7 +27,6 @@ class Application:
 
     def destroy(self):
         self.wd.quit()
-
 
     def is_valid(self):
         try:
