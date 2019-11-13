@@ -21,6 +21,10 @@ def app(request):
     #проверка нужно выполнять логин или не нужно
     return fixture
 
+@pytest.fixture(scope="session", autouse=True) #благодаря autouse фикстура сработает автоматически
+def configure_server(request):
+    pass
+
 #ф-цияб занимающ загрузкой из target.json
 def load_config(file):
     global target
