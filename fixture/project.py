@@ -22,13 +22,15 @@ class ProjectHelper:
             wd = self.app.wd
             self.redirect_to_manage_pr()
             self.project_cache=[]
-            for element in wd.find_elements_by_partial_link_text("name"):
+            for element in wd.find_element_by_css_selector("row-1","row-2"):
             #for element in wd.find_elements_by_partial_link_text("manage_proj_edit_page.php?project_id="):
             #for element in wd.find_elements_by_xpath("//table[@class='width100']/tr//td[@width]"):
-                cells = element.find_elements_by_tag_name("tr")
+                cells = element.find_elements_by_tag_name("td")
                 name = cells[1].text
                 #получаем текст элемента
-                id = element.find_element_by_name("selected[]").get_attribute("value")
+                base_id = element.find_element_by_partial_link_text("manage_proj_edit_page.php?project_id").get_attribute("href")
+                id=base_id.replace('manage_proj_edit_page.php?project_id', '')
+                #id = element.find_element_by_name("selected[]").get_attribute("value")
                 status = cells[2].text
                 #деление ячейки на строки. У нее берется текст и делится на кусочки
                 #когда нарезка                all_phones = cells[5].text.splitlines()
