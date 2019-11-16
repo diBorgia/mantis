@@ -17,13 +17,14 @@ def app(request,config):
     global fixture
     # через реквест получаем доступ к параметру
     browser = request.config.getoption("--browser")
-    #web_config =load_config(request.config.getoption("--target"))["web"]
+    #config =load_config(request.config.getoption("--target"))["web"]
     #ситуация перед вызовом первой тестовой функции
     # если фикстура уже создана, н.проверить, не испортилась ли она
     if fixture is None or not fixture.is_valid():
     #тогда надо фикстуру проинициализировать
         fixture = Application(browser=browser, config=config)#url=config["web"]['baseUrl'])
     #проверка нужно выполнять логин или не нужно
+    fixture.session.ensure_login(username=config["webAdmin"]["username"], password=config['webAdmin']["password"])
     return fixture
 
 @pytest.fixture(scope="session", autouse=True) #благодаря autouse фикстура сработает автоматически

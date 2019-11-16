@@ -1,6 +1,9 @@
 import string
 import random
 
+def test_login(app):
+    app.session.login("administrator","root")
+    assert app.session.is_logged_in_as("administrator")
 
 def random_username(prefix,maxlen):
     symbols = string.ascii_letters
