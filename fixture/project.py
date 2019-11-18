@@ -22,22 +22,27 @@ class ProjectHelper:
             wd = self.app.wd
             self.redirect_to_manage_pr()
             self.project_cache=[]
-            for element in wd.find_element_by_css_selector("row-1","row-2"):
+            all_tables = wd.find_elements_by_xpath("//table[@class='width100']")
+            table = all_tables[1]
+            rows =table.find_elements_by_xpath(".//tr[contains(@class, 'row')]")
+            del rows[0]
+            for element in rows:
+            #for element in : #wd.find_element_by_css_selector("row-1","row-2"):
             #for element in wd.find_elements_by_partial_link_text("manage_proj_edit_page.php?project_id="):
             #for element in wd.find_elements_by_xpath("//table[@class='width100']/tr//td[@width]"):
                 cells = element.find_elements_by_tag_name("td")
-                name = cells[1].text
+                name = cells[0].text
                 #получаем текст элемента
-                base_id = element.find_element_by_partial_link_text("manage_proj_edit_page.php?project_id").get_attribute("href")
-                id=base_id.replace('manage_proj_edit_page.php?project_id', '')
+                    #base_id = element.find_element_by_partial_link_text("manage_proj_edit_page.php?project_id").get_attribute("href")
+                    #id=base_id.replace('manage_proj_edit_page.php?project_id', '')
                 #id = element.find_element_by_name("selected[]").get_attribute("value")
-                status = cells[2].text
+                    #status = cells[1].text
                 #деление ячейки на строки. У нее берется текст и делится на кусочки
                 #когда нарезка                all_phones = cells[5].text.splitlines()
                 #когда склейка
-                view_status = cells[4].text
-                description = cells[5].text
-                self.project_cache.append(Project(name=name,id=id,status=status,public=view_status, desc=description))
+                    #view_status = cells[3].text
+                description = cells[4].text
+                self.project_cache.append(Project(name=name, desc=description)) #id=id,status=status,public=view_status,
                                                     #когда нарезка по разным телефонам
                                                   #home=all_phones[0],mobile=all_phones[1],work=all_phones[2],phone2=all_phones[3]))
             # создется внешняя копия, сам кеш не будет тронут
@@ -77,12 +82,16 @@ class ProjectHelper:
         return len(wd.find_elements_by_partial_link_text("name"))
         #return len(wd.find_elements_by_xpath("//table[@class='width100']/tr//td[@width]"))
 
-    def delete_first_proj(self,index):
+    def delete_proj(self,index):
         wd = self.app.wd
         self.redirect_to_manage_pr()
-        wd.find_element_by_xpath("//tr[%s]/td/a"%index).click()
-        wd.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::input[4]").click()
+        xpath="//a[contains(@href,'manage_proj_edit_page.php?project_id=%s')]"%index
+        wd.find_element_by_xpath(xpath).click()
+        #wd.find_element_by_xpath("//tr[%s]/td/a"%index).click()
+        wd.find_element_by_xpath("//input[@value='Delete Project']").click()
+        #wd.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::input[4]").click()
         #submit deletion
-        wd.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::input[6]").click()
+        wd.find_element_by_xpath("//input[@value='Delete Project']").click()
+        #wd.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::input[6]").click()
         self.redirect_to_manage_pr()
         self.project_cache = None

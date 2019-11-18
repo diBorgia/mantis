@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b97b5b4-dfd5-4b0b-a3aa-ca6652af2ba1" name="Default Changelist" comment="" />
+    <list default="true" id="4b97b5b4-dfd5-4b0b-a3aa-ca6652af2ba1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fixture/soap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/mail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/signup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config_inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config_inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/UPGRADE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/UPGRADE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/SAR-INF/assembly.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/SAR-INF/assembly.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/SAR-INF/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/SAR-INF/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/SAR-INF/environment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/SAR-INF/environment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/james-fetchmail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/james-fetchmail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/james-listmanager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/james-listmanager.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/james-liststores.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/james-liststores.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/james-smtphandlerchain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/james-smtphandlerchain.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/miResources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/miResources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/maxMessageSize.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/maxMessageSize.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/oneAccountManyUsers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/oneAccountManyUsers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/oneAccountManyUsersDynamic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/oneAccountManyUsersDynamic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/oneAccountPerUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/oneAccountPerUser.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/oneAccountPerUserDynamic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/oneAccountPerUserDynamic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/remoteReceivedHeader.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/samples/fetchmail/remoteReceivedHeader.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/sqlResources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/apps/james/conf/sqlResources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/bin/phoenix.sh" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/bin/phoenix.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/bin/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/bin/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/bin/sendmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/bin/sendmail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/james-2.3.1/conf/phoenix-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/james-2.3.1/conf/phoenix-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target.json" beforeDir="false" afterPath="$PROJECT_DIR$/target.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_del_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_signup_new_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_signup_new_account.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +52,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TUw0HY5QoTagTomyaDT9TyGsvp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/test_login.py" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/test_del_project.py" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -35,7 +71,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_login.py">
+  <component name="RunManager" selected="Python tests.pytest in test_del_project.py">
+    <configuration name="pytest in test_add_project.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="mantis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="D:\Users7\Master\Documents\GitHub\mantis\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_project.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_del_project.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="mantis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="D:\Users7\Master\Documents\GitHub\mantis\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_project.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_login.py" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="mantis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,6 +133,8 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python tests.pytest in test_add_project.py" />
+      <item itemvalue="Python tests.pytest in test_del_project.py" />
       <item itemvalue="Python tests.pytest in test_signup_new_account.py" />
       <item itemvalue="Python tests.pytest in test_login.py" />
     </list>
@@ -96,5 +164,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_del_project.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/project.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

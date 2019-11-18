@@ -54,6 +54,7 @@
       <servernames autodetect="true" autodetectIP="true">
 <!-- CONFIRM? -->
          <servername>localhost</servername>
+		 <servername>localhost.ru</servername>
       </servernames>
 
       <!-- Set whether user names are case sensitive or case insensitive -->

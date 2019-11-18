@@ -12,7 +12,7 @@ class Project:
 #ф-ция, что определяет, как будет выглядеть объект при выводе на консоль, какого его строковое представление representation
     def __repr__(self):
         #вывод идентификатора и имени
-        return "%s:%s:%s" % (self.id, self.name, self.status)
+        return "%s:%s" % (self.name, self.desc)
 
     #станд ф-ция сравнения объектов не по расположению в памяти, а по значению
     def __eq__(self, other):

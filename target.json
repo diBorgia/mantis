@@ -13,7 +13,7 @@
   },
     "james": {
     "host":"localhost",
-      "port": 4555,
+    "port": 4555,
     "username": "root",
     "password": "root"
   }
