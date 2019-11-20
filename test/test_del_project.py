@@ -4,6 +4,10 @@ import random
 from random import randrange
 
 def test_delete_some_project(app):
+    username = 'administrator'
+    password = "root"
+    count_old=app.soap.count(username, password)
+
     #if app.group.count()==0:
     if len(app.project.get_project_list())==0:
         app.project.create(Project(name="test"))
@@ -18,8 +22,9 @@ def test_delete_some_project(app):
     new_projects = app.project.get_project_list()
     #new_groups = app.group.get_group_list()
     #проверка, что новый список на единицу короче чем старый
-    #assert len(old_projects)-1 == len(new_groups)
+    assert len(count_old)-1 == len(new_projects)
     #берем старый список и удал все эл с индексом
+
     old_projects[0:1] = []
     assert old_projects==new_projects
     #assert sorted(old_projects, key=attrgetter('name')) == sorted(new_projects, key=attrgetter('name'))
