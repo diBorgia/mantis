@@ -20,9 +20,10 @@ def test_delete_some_project(app):
     #правила сортировки для польз.интерфейса и БД - разные 7.4
     app.project.delete_proj()
     new_projects = app.project.get_project_list()
+    count_new=app.soap.count(username, password)
     #new_groups = app.group.get_group_list()
     #проверка, что новый список на единицу короче чем старый
-    assert len(count_old)-1 == len(new_projects)
+    assert len(count_old)-1 == len(count_new)
     #берем старый список и удал все эл с индексом
 
     old_projects[0:1] = []
