@@ -82,11 +82,12 @@ class ProjectHelper:
         return len(wd.find_elements_by_partial_link_text("name"))
         #return len(wd.find_elements_by_xpath("//table[@class='width100']/tr//td[@width]"))
 
-    def delete_proj(self,index):
+    def delete_proj(self):
         wd = self.app.wd
         self.redirect_to_manage_pr()
-        xpath="//a[contains(@href,'manage_proj_edit_page.php?project_id=%s')]"%index
-        wd.find_element_by_xpath(xpath).click()
+        wd.find_element_by_xpath("//a[contains(@href,'manage_proj_edit_page.php?project_id')]").click()
+       # xpath="//a[contains(@href,'manage_proj_edit_page.php?project_id=%s')]"%index
+       # wd.find_element_by_xpath(xpath).click()
         #wd.find_element_by_xpath("//tr[%s]/td/a"%index).click()
         wd.find_element_by_xpath("//input[@value='Delete Project']").click()
         #wd.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::input[4]").click()
