@@ -42,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_del_project.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_project.py">
     <configuration name="pytest in test_add_project.py" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="mantis" />
       <option name="INTERPRETER_OPTIONS" value="" />
